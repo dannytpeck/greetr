@@ -1,19 +1,29 @@
 (function(global, $) {
     
-    var Greetr = function(firstname, lastname, language) {
-        return new Greetr.init(firstname, lastname, language);
-    }
+    var Greetr = function(firstName, lastName, language) {
+        return new Greetr.init(firstName, lastName, language);
+    };
     
-    Greetr.prototype = {};
+    var supportedLangs = ['en', 'es'];
     
-    Greetr.init = function(firstname, lastname, language) {
-        
-        var self = this;
-        self.firstname = firstname || "";
-        self.lastname = lastname || "";
-        self.language = language || "en";
-        
-    }
+    var greetings = {
+        en: 'Hello',
+        es: 'Hola'
+    };
+    
+    var formalGreetings = {
+        en: 'Greetings',
+        es: 'Saludos'
+    };
+    
+    var logMessages = {
+        en: 'Logged in',
+        es: 'Inició sesión'
+    };
+    
+    Greetr.prototype = {
+
+    };
     
     Greetr.init.prototype = Greetr.prototype;
     
