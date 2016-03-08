@@ -1,2 +1,2 @@
 var g = G$('John', 'Doe');
-g.greet().setLang('es').greet(true);
+g.setLang("es").HTMLGreeting("#greeting").setLang("en").log();
